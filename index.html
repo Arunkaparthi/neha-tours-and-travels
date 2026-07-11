@@ -8,42 +8,79 @@
 </head>
 <body>
 
-    <header>
-        <img src="https://cdn-icons-png.flaticon.com/512/69/69854.png" alt="Bus Logo" width="50">
-        <h1>Neha Tours and Travels</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="packages.html">Packages</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+    <img src="https://cdn-icons-png.flaticon.com/512/69/69854.png" alt="Bus Logo" width="50">
+    <h1>Neha Tours and Travels</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h2>Explore the World with Us</h2>
-        <p>Best Travel Packages at Affordable Prices</p>
-        <a href="packages.html" class="btn">Book Now</a>
-    </section>
+<section class="hero">
+    <h2>Explore India With Us</h2>
+    <p>Affordable Packages | Safe Travel | 24/7 Support</p>
+    <a href="#book" class="btn">Book Now</a>
+</section>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-box">
-            <h3>🚌 Bus Booking</h3>
-            <p>Comfortable AC and Non-AC buses for all routes</p>
-        </div>
-        <div class="service-box">
-            <h3>🏨 Hotel Booking</h3>
-            <p>Best hotels at lowest prices with free cancellation</p>
-        </div>
-        <div class="service-box">
-            <h3>🌴 Tour Packages</h3>
-            <p>Goa, Kerala, Manali and many more destinations</p>
-        </div>
-    </section>
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+        <h3>🚌 Bus Booking</h3>
+        <p>AC & Non-AC buses for all major routes across India.</p>
+    </div>
+    <div class="service-box">
+        <h3>🏨 Hotel Booking</h3>
+        <p>Best hotels at best prices with breakfast included.</p>
+    </div>
+    <div class="service-box">
+        <h3>✈️ Flight Tickets</h3>
+        <p>Domestic & International flights with lowest fares.</p>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 Neha Tours and Travels. All Rights Reserved.</p>
-        <p>📞 +91 9876543210 | 📧 nehatours@gmail.com</p>
-    </footer>
+<!-- BOOK NOW FORM SECTION -->
+<section id="book" style="padding:60px 20px; background:white; text-align:center;">
+    <h2 style="color:#004aad; font-size:32px; margin-bottom:20px;">Book Your Trip Now</h2>
+    <p style="margin-bottom:30px;">Fill the form and we will call you within 2 hours</p>
+    
+    <form action="https://formsubmit.co/nehatours@gmail.com" method="POST" style="max-width:500px; margin:auto; background:#f4f4f4; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        
+        <!-- To prevent spam -->
+        <input type="hidden" name="_subject" value="New Booking Request - Neha Tours">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="text" name="Name" placeholder="Your Full Name" required style="width:90%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+        
+        <input type="tel" name="Phone" placeholder="Your Phone Number" required style="width:90%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+        
+        <select name="Destination" required style="width:90%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+            <option value="">Select Destination</option>
+            <option>Goa</option>
+            <option>Kerala</option>
+            <option>Manali</option>
+            <option>Rajasthan</option>
+            <option>Other</option>
+        </select>
+        
+        <input type="date" name="Travel Date" required style="width:90%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px;">
+        
+        <textarea name="Message" placeholder="Any special request?" rows="3" style="width:90%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px;"></textarea>
+        
+        <button type="submit" class="btn" style="border:none; cursor:pointer; width:90%; font-size:16px;">Send Booking Request</button>
+        
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Neha Tours and Travels. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919876543210" target="_blank" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.3); font-size:16px; z-index:999;">
+    💬 WhatsApp Us
+</a>
 
 </body>
 </html>
