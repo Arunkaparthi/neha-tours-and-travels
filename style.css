@@ -5,10 +5,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
 }
 
+/* HEADER */
 header {
     background: #004aad;
     color: white;
@@ -17,6 +20,11 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header img {
+    margin-right: 10px;
 }
 
 header h1 {
@@ -31,12 +39,15 @@ nav a {
     margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #ffcc00;
 }
 
+/* HERO SECTION WITH BUS BACKGROUND */
 .hero {
     background: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1600') no-repeat center center/cover;
     height: 450px;
@@ -59,6 +70,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* BUTTON */
 .btn {
     background: #ff6600;
     color: white;
@@ -67,12 +79,15 @@ nav a:hover {
     border-radius: 8px;
     font-weight: bold;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background: #e65c00;
+    transform: scale(1.05);
 }
 
+/* SERVICES SECTION */
 .services {
     padding: 50px 20px;
     text-align: center;
@@ -93,16 +108,30 @@ nav a:hover {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    vertical-align: top;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .service-box h3 {
     color: #ff6600;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
+/* FOOTER */
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
 }
